@@ -27,13 +27,13 @@
 		position=" 0.00 0.00 0.00" 
 		rotation="-90 0 0" 
 		color="#888888" 
-		material="src: #grass; repeat:10 10; transparent: true; opacity: 0.75"
+		material="src: #grass; repeat:10 10; transparent: false;"
 		shadow="cast: false; receive: true">
 	</a-plane>
 	
 	<a-box
 		width = "1" height = "1" depth = "1"
-		position = "-1 0.5 -3"
+		position = "-1 0.5 -2"
 		rotation = "0 45 0"  
 		color = "#FFFFFF"
 		material = "src: #crate"
@@ -49,13 +49,22 @@
 		shadow = "cast: true; receive: true">
 	</a-box>
 	
-	<a-cone>
-		width = "10" height = "10" depth = "10"
-		position = "0 0 0
-		rotation = "0 0 "  
+	<a-box
+		width = "1" height = "2" depth = "1"
+		position = "-2 0.5 -3"
+		rotation = "0 30 0"  
 		color = "#FFFFFF"
-		material = "src: #light"
+		material = "src: #crate"
 		shadow = "cast: true; receive: true">
+	</a-box>
+	
+	<a-cone>
+		width = "20" height = "30" depth = "20"
+		position = "0 0 0
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #light; transparent: true; opacity: 0.10"
+		shadow = "cast: false; receive: false">
 	</a-cone>
 	
 
