@@ -10,11 +10,11 @@
 <a-scene antialias="true">
 	
 	<a-assets>
-		<img id="sky" src="images/boxbg.jpg" crossorigin="anonymous" />
-		<img id="grass" src="images/grass.jpg" crossorigin="anonymous" />
+		<img id="sky" src="images/boxbg.jpeg" crossorigin="anonymous" />
+		<img id="grass" src="images/concretefloor003.jpg" crossorigin="anonymous" />
 		<img id="crate" src="images/crate.jpg" crossorigin="anonymous" />
-		<img id="earth" src="images/earth-sphere.jpg" crossorigin="anonymous" />
-		<img id="hexagons" src="images/hexagons.png" crossorigin="anonymous" />
+		<img id="maincrate" src="images/mainbox.jpg" crossorigin="anonymous" />
+		<img id="light" src="images/light.png" crossorigin="anonymous" />
 	</a-assets>
 		
 	<a-sky 
@@ -42,12 +42,20 @@
 	
 	<a-box
 		width = "2" height = "1" depth = "1"
-		position = "-4 0.5 -3"
+		position = "-4 0.5 1"
 		rotation = "0 90 0"  
 		color = "#FFFFFF"
 		material = "src: #crate"
 		shadow = "cast: true; receive: true">
 	</a-box>
+	<a-cone
+		width = "10" height = "10" depth = "10"
+		position = "0 0 0
+		rotation = "0 0 "  
+		color = "#FFFFFF"
+		material = "src: #light"
+		shadow = "cast: true; receive: true">
+	</a-cone>
 	
 
 	
